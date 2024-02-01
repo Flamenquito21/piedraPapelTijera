@@ -19,10 +19,9 @@ export default function Hijo({nombre,gritoDeGuerra }) {//props coinciden con las
     console.log("cuando la dependencia -> objeto cambia o se declara)");
   }, [objeto]);
 
-  function name() {
+  function gritar() {
     console.log(gritoDeGuerra);
   }
-
   return (
     <>
       <button type="submit" name="opcion" onClick={() => setObjeto("papel")}>
@@ -31,7 +30,7 @@ export default function Hijo({nombre,gritoDeGuerra }) {//props coinciden con las
       <button type="submit" name="opcion" onClick={() => setObjeto("tijera")}>
         tijera
       </button>
-      <button type="submit" name="opcion" onClick={name}>
+      <button type="submit" name="opcion" onClick={gritar}>
         grito
       </button>
       <p>{nombre}</p>
